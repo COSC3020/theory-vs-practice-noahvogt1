@@ -8,10 +8,10 @@ I talked to some kid in class about this and I don't know his name, we just boun
 
   1. Asymptotic analysis ignores constants which doesn't give you the full
      realistic performance in practice.
-  2. Nothing is ever actually run to the point of asymptotic analysis, you may
-     itterate a function over 100,000 elements but it is still not as high as
-     you would need to go to reach asymptotic. Therefor it doesn't accuratly
-     represent what would happen in practice
+  2. Nothing is ever actually run to the point of an infinite size which is where
+     asymptotic analysis is done, you may itterate a function over 100,000
+     elements but it is still not as high as you would need to go to reach asymptotic.
+     Therefor it doesn't accuratly represent what would happen in practice
   3. There are limits in terms of hardware as well, so it could run faster on
      a super computer compared to a raspberry pi.
 
