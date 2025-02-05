@@ -16,9 +16,18 @@
   elements takes 5 seconds. Given what you know about the asymptotic complexity
   of search in a binary search tree, how long would you guess finding the same
   element in a search tree with 10,000 elements takes? Explain your reasoning.
+  $xlog_2(1000)=5$
+  $10x=5$ Roughly
+  $x=2$
+  $2log_2(10000) = 6.66$
+  It would take roughly 6.66 seconds using the time complexity.
 
 - You measure the time with 10,000 elements and it takes 100 seconds! List 3
   reasons why this could be the case, given that reasoning with the asymptotic
   complexity suggests a different time.
+
+  1. Again there are hardware limits that could have produced a worse time.
+  2. A poorly balanced tree could also produce bad timing
+  3. 
 
 Add your answers to this markdown file.
