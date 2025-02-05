@@ -33,6 +33,6 @@
 
   1. Again there are hardware limits that could have produced a worse time.
   2. A poorly balanced tree could also produce bad timing
-  3. 
+  3. There could be background software running at the time causing slow runtimes
 
 Add your answers to this markdown file.
