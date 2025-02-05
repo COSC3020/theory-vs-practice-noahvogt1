@@ -34,8 +34,11 @@ I talked to some kid in class about this and I don't know his name, we just boun
   reasons why this could be the case, given that reasoning with the asymptotic
   complexity suggests a different time.
 
-  1. Again there are hardware limits that could have produced a worse time.
-  2. A poorly balanced tree could also produce bad timing
-  3. There could be background software running at the time causing slow runtimes
+  1. There may be hardware limits that will allow the program to run quickly on
+     small element sizes (less than 2000 for example) but the ram/cache could be used up on
+     larger sizes (greater than 2000 for example)
+  2. A poorly balanced binary search tree (line 18) could also produce bad timing
+  3. There could be background software running at the time you run the large element
+     list but when you ran it on the smaller list size the background tasks weren't running
 
 Add your answers to this markdown file.
