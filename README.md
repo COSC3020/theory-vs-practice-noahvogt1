@@ -21,9 +21,9 @@
   
   $10x=5$ Roughly
   
-  $x=1/2$
+  $x=(1/2)$
   
-  $1/2log_2(10000) = 6.66$
+  $(1/2)log_2(10000) = 6.66$
   
   It would take roughly 6.66 seconds using the time complexity.
 
