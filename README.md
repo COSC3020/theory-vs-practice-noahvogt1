@@ -10,7 +10,7 @@ I talked to some kid in class about this and I don't know his name, we just boun
      realistic performance in practice.
   2. Asymptotic analysis assumes very large inputs; however, in practice a smaller
      input size might run better on theoretically worse algorithms. Take two functions:
-     $f(n) = n$ and $g(n) = n^2/16$
+     $f(n) = \theta (n)$ and $g(n) \in \theta (n^2/16)$. Using asymptotic anal
   4. There are limits in terms of hardware as well, so it could run faster on
      a super computer compared to a raspberry pi.
 
