@@ -8,11 +8,10 @@ I talked to some kid in class about this and I don't know his name, we just boun
 
   1. Asymptotic analysis ignores constants which doesn't give you the full
      realistic performance in practice.
-  2. Nothing is ever actually run to the point of an infinite size which is where
-     asymptotic analysis is done, you may itterate a function over 100,000
-     elements but it is still not as high as you would need to go to reach asymptotic.
-     Therefor it doesn't accuratly represent what would happen in practice
-  3. There are limits in terms of hardware as well, so it could run faster on
+  2. Asymptotic analysis assumes very large inputs; however, in practice a smaller
+     input size might run better on theoretically worse algorithms. Take two functions:
+     $f(n) = n$ and $g(n) = n^2/16$
+  4. There are limits in terms of hardware as well, so it could run faster on
      a super computer compared to a raspberry pi.
 
 - Suppose finding a particular element in a binary search tree with 1,000
