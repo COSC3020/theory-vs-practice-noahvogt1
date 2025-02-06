@@ -38,10 +38,10 @@ I talked to some kid in class about this and I don't know his name, we just boun
   1. There may be hardware limits that will allow the program to run quickly on
      small element sizes (less than 2000 for example) but the ram/cache could be used up on
      larger sizes (greater than 2000 for example)
-  2. A poorly balanced binary search tree (you say that it is a binary search tree on line 18)
-      could also produce bad timing. If the one with 1,000 elements was well balanced and
-     the 10,000 element one was poorly balanced, then the 10,000 element one would run slower
-     than expected.
+  2. A poorly balanced binary search tree (you say that it is a binary search tree on line 18
+     of this markdown file) could also produce bad timing. If the one with 1,000 elements
+     was well balanced and the 10,000 element one was poorly balanced, then the 10,000
+     element one would run slower than expected.
   3. There could be background software running at the time you run the large element
      list but when you ran it on the smaller list size the background tasks weren't running
 
