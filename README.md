@@ -10,8 +10,10 @@ I talked to some kid in class about this and I don't know his name, we just boun
      realistic performance in practice.
   2. Asymptotic analysis assumes very large inputs; however, in practice a smaller
      input size might run better on theoretically worse algorithms. Take two functions:
-     $f(n) = \theta (n)$ and $g(n) \in \theta (n^2/16)$. Using asymptotic anal
-  4. There are limits in terms of hardware as well, so it could run faster on
+     $f(n) \in \theta (n)$ and $g(n) \in \theta (n^2/16)$. Using asymptotic analysis,
+     g(n) is a far slower algorithm than f(n), but if we were to use a very small n
+     value such as n = 4, g(n) would actually run faster than f(n).
+  3. There are limits in terms of hardware as well, so it could run faster on
      a super computer compared to a raspberry pi.
 
 - Suppose finding a particular element in a binary search tree with 1,000
@@ -36,7 +38,10 @@ I talked to some kid in class about this and I don't know his name, we just boun
   1. There may be hardware limits that will allow the program to run quickly on
      small element sizes (less than 2000 for example) but the ram/cache could be used up on
      larger sizes (greater than 2000 for example)
-  2. A poorly balanced binary search tree (line 18) could also produce bad timing
+  2. A poorly balanced binary search tree (you say that it is a binary search tree on line 18)
+      could also produce bad timing. If the one with 1,000 elements was well balanced and
+     the 10,000 element one was poorly balanced, then the 10,000 element one would run slower
+     than expected.
   3. There could be background software running at the time you run the large element
      list but when you ran it on the smaller list size the background tasks weren't running
 
