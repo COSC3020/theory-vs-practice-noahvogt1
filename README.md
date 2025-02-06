@@ -10,8 +10,9 @@ I talked to some kid in class about this and I don't know his name, we just boun
      realistic performance in practice.
   2. There is a difference between worst, best and average case. For an arbitrary
      algorithm, the worst case may be $n^2$, but the average case is $n$. So in
-     practice, it might actually run faster.
-  4. There are limits in terms of hardware as well, so it could run faster on
+     practice, it might actually run faster or slower than expected using asymptotic
+     analysis.
+  3. There are limits in terms of hardware as well, so it could run faster on
      a super computer compared to a raspberry pi.
 
 - Suppose finding a particular element in a binary search tree with 1,000
