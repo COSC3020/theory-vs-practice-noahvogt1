@@ -8,10 +8,10 @@ I talked to some kid in class about this and I don't know his name, we just boun
 
   1. Asymptotic analysis ignores constants which doesn't give you the full
      realistic performance in practice.
-  2. There is a difference between worst, best and average case. For an arbitrary
-     algorithm, the worst case may be $n^2$, but the average case is $n$. So in
-     practice, it might actually run faster or slower than expected using asymptotic
-     analysis.
+  2. Asymptotic analysis also does not take into accound lower order terms,
+     this can drastically change runtimes in pracitce. Just because a higher
+     order term is $n^2$ does not mean that an extra 20n doesn't count towards
+     runtime in practice.
   3. There are limits in terms of hardware as well, so it could run faster on
      a super computer compared to a raspberry pi.
 
@@ -40,7 +40,8 @@ I talked to some kid in class about this and I don't know his name, we just boun
   2. A poorly balanced binary search tree (you say that it is a binary search tree on line 19
      of this markdown file) could also produce bad timing. If the one with 1,000 elements
      was well balanced and the 10,000 element one was poorly balanced, then the 10,000
-     element one would run slower than expected.
+     element one would have a runtime closer to a linked list which would be anywhere from 6.66
+     seconds all the way to 1.4 hours depending on how poorly balanced the tree was.
   3. There could be background software running at the time you run the large element
      list but when you ran it on the smaller list size the background tasks weren't running
 
