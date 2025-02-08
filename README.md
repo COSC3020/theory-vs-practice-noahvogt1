@@ -41,8 +41,17 @@ I talked to some kid in class about this and I don't know his name, we just boun
      of this markdown file) could also produce bad timing. If the one with 1,000 elements
      was well balanced and the 10,000 element one was poorly balanced, then the 10,000
      element one would have a runtime closer to a linked list which would be anywhere from 6.66
-     seconds all the way to 1.4 hours depending on how poorly balanced the tree was.
-  3. There could be background software running at the time you run the large element
+     seconds all the way to 1.4 hours depending on how poorly balanced the tree was. Math below:
+     One step is considered to be one step down the tree towards the item.
+
+     $log_2(1000) = 10$  steps in 5 seconds, this is aproximatly 1 step every half second.
+
+     10,000 steps in a linked list would then take  $10000 * 0.5 = 5000$  seconds
+
+     Convert this to hours:  $5000 / 3600 = 1.4$  hours. This runtime can not be exact but is
+     a good approximation of the max runtime because it represents what a linked list form of a
+     tree would be.
+  4. There could be background software running at the time you run the large element
      list but when you ran it on the smaller list size the background tasks weren't running
 
 Add your answers to this markdown file.
