@@ -50,8 +50,16 @@ I talked to some kid in class about this and I don't know his name, we just boun
 
      Convert this to hours:  $5000 / 3600 = 1.4$  hours. This runtime can not be exact but is
      a good approximation of the max runtime because it represents what a linked list form of a
-     tree would be.
-  4. There could be background software running at the time you run the large element
+     tree would be. So in this case the runtime was not so out of balance that it was a linked list.
+     This is because the runtime was not 1.4 hours, it was 100 seconds. This means that the binary
+     search tree was out of balance but not terribly.
+     
+     We know the depth of the tree was aproximatly $log_2(1000) = 10$ and this took five seconds. We
+     can then solve for the depth of out of balance tree. (10/5s) = (x/100s), x = 200. Therefor the
+     tree depth must be closer to 200. This means that the data is far from a linked list but is still
+     terribly out of balance which accounts for the bad runtime.
+     
+  3. There could be background software running at the time you run the large element
      list but when you ran it on the smaller list size the background tasks weren't running
 
 Add your answers to this markdown file.
